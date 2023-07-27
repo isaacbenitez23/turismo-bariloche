@@ -68,7 +68,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #ddd;
+    background-color: #333333;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +78,8 @@ body {
 
 .footer p {
     flex: 1 0 100%;
-    text-align: center; 
+    text-align: center;
+    color: white; 
     margin-bottom: 10px; 
 }
 
