@@ -1,183 +1,279 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,500;1,900&display=swap');
-
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilos Generales */
 body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    padding-top: 20px; /* Altura de la navbar en pantallas grandes */
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Estilos para el header y navbar */
+header {
+    background-color: #3e5f8a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 20px; /* Altura reducida de la navbar en pantallas grandes */
+}
 
 .navbar {
-    background-color: #000080;
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0; /* Ajusta el padding superior e inferior */
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
     text-decoration: none;
-}
-
-.navbar-nav {
-    list-style: none;
-}
-
-.nav-item {
-    margin-right: 20px;
 }
 
 .nav-link {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
+    padding: 3px 15px; /* Ajusta el padding superior e inferior */
 }
 
-.hero-image {
-    height: 400px;
-    background-image: url('ruta/de/la/imagen.jpg');
-    background-size: cover;
+/* Estilos para el botón toggler en responsive */
+.navbar-toggler {
+    font-size: 14px; /* Reduce el tamaño del icono */
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
 }
 
-.hero-image img {
+/* Estilos para los hero */
+.hero {
+    position: relative;
+    text-align: center;
+    max-height: calc(100vh - 20px); /* Restar la altura de la navbar al 100% de la altura de la ventana */
+    overflow: hidden;
+}
+
+.hero img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-    padding: 20px;
+/* Estilos para los mensajes */
+.mensaje {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Estilos para el separador */
+.separador {
+    text-align: center;
+    background-color: #3e5f8a;
+    color: #fff;
+    padding: 40px 0;
+}
+
+/* Estilos para las cards */
+.cards-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card {
-    border: 2px solid #3e5f8a;
-    padding: 10px;
-    color: white;
-    background-color: #3e5f8a;
+    flex: 1 1 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
     text-align: center;
+    background-color: #fff;
 }
 
-/* Footer */
+.card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #3e5f8a;
+}
+
+/* Estilos para la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Estilos para el footer */
 .footer {
-    background-color: #333333;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center; 
-}
-
-.footer p {
-    flex: 1 0 100%;
+    background-color: #3e5f8a;
+    color: #fff;
     text-align: center;
-    color: white; 
-    margin-bottom: 10px; 
+    padding: 20px;
+    list-style: none;
+    /* Eliminar los puntos de la lista */
 }
 
 .social-links {
     display: flex;
-    list-style: none;
-    padding: 0;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-left: 0;
+    /* Eliminar el padding izquierdo de la lista */
 }
 
 .social-links li {
-    margin-right: 10px;
+    list-style: none;
+    /* Eliminar los puntos de la lista */
 }
 
 .social-link {
-    color: #3e5f8a;
-    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
 }
 
-
-.activities {
-    background-color: #fff;
-    padding: 20px;
+.social-link img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
-
-.banner {
-    height: 400px;
-    background-image: url('ruta/de/la/imagen1.jpg');
-    background-size: cover;
+/* Estilos para el formulario */
+.formulario {
+    text-align: center;
+    padding: 40px 0;
 }
 
-
-.contact-form {
-    background-color: #3e5f8a;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    margin-bottom: 20px;
+.form-control {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
-.contact-form button {
+.btn {
+    background-color: #3e5f8a;
+    color: #fff;
     padding: 10px 20px;
-    background-color: #fff;
-    color: #3e5f8a;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-
-.about {
-    padding: 20px;
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    align-items: flex-start; 
+/* Estilos para la sección acerca */
+.acerca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px;
+    overflow: hidden;
 }
 
-.about-content {
-    flex: 1; 
-    padding-right: 20px; 
+.acerca img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
-.about-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
+/* Estilos para el carrusel */
+.carousel-inner {
+    max-height: 400px;
+    /* Ajustar la altura del carrusel */
 }
 
-.about-image {
-    flex: 1; 
-    text-align: center; 
+.carousel-item img {
+    object-fit: cover;
+    max-height: 400px;
+    /* Ajustar la altura de las imágenes del carrusel */
 }
 
-.about-image img {
+/* Nuevos estilos para la sección cards-extensas */
+.cards-extensas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-extensa {
+    width: 50%;
+    padding: 15px;
+}
+
+.card-extensa img {
     max-width: 100%;
     height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
+.text-content {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
 
-@media screen and (max-width: 768px) {
-    .about {
-        flex-direction: column; 
-        align-items: center; 
+.text-content h3 {
+    margin-top: 0;
+    color: #3e5f8a;
+}
+
+/* Estilos responsivos para la sección cards-extensas */
+@media (max-width: 768px) {
+    .card-extensa {
+        width: 100%;
     }
 
-    .about-content {
-        padding-right: 0; 
-        margin-bottom: 20px; 
+    .card-extensa img {
+        margin-bottom: 10px;
+    }
+
+    header {
+        height: 15px; /* Altura reducida de la navbar en dispositivos móviles */
+    }
+
+    /* Ajustar el padding-top del body para evitar solapamiento con la navbar */
+    body {
+        padding-top: 15px; /* Altura de la navbar en dispositivos móviles */
+    }
+
+    /* Reducir tamaño del botón toggler en responsive */
+    .navbar-toggler {
+        font-size: 12px;
+    }
+
+    /* Ajustar el hero para que se visualice completo en dispositivos móviles */
+    .hero {
+        max-height: calc(100vh - 15px); /* Restar la altura de la navbar al 100% de la altura de la ventana */
+    }
+
+    .hero h1 {
+        font-size: 28px;
     }
 }

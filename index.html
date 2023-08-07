@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Turismo Bariloche</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+    <title>Explora Bariloche</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3e5f8a;">
             <div class="container">
-                <a class="navbar-brand" href="./index.html">Turismo Bariloche</a>
+                <a class="navbar-brand" href="./index.html">Explora Bariloche</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,34 +28,76 @@
             </div>
         </nav>
     </header>
-    <div class="hero-image">
-        <img src="./img/bariloche-inicio.jpg" alt="Imagen de Paisaje en Bariloche">
-    </div>    
-    <div class="card-container">
-        <div class="card">
-            <img src="./img/bike_02.jpg" alt="Paseos en bici">
-            <h3>Paseos en Bici</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolores inventore amet?</p>
-        </div>
-        <div class="card">
-            <img src="./img/cabalgata_01.jpg" alt="Cabalgar">
-            <h3>Cabalgar</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolores inventore amet?
-            </p>
-        </div>
-        <div class="card">
-            <img src="./img/escalada_01.jpg" alt="Escalar">
-            <h3>Escalar</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolores inventore amet?</p>
-        </div>
-        <div class="card">
-            <img src="./img/kayak_01.jpg" alt="Kayak">
-            <h3>Kayak</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolores inventore amet?</p>
-        </div>
-    </div>
-    
-
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="./img/inicio-bariloche.jpg" alt="paisaje-bariloche">
+                <h1>Bienvenidos a <br>Bariloche</h1>
+            </div>
+        </section>
+        <section class="mensaje">
+            <h2>Explora Bariloche</h2>
+            <p>¡Bienvenido a Explora Bariloche! Sumérgete en la belleza deslumbrante de San Carlos de Bariloche, la joya natural de Argentina. Preparate para un emocionante viaje a través de los impresionantes paisajes montañosos, lagos cristalinos y bosques encantadores de esta región única. Descubre aventuras al aire libre, actividades emocionantes durante todas las estaciones, gastronomía deliciosa y acogedoras tradiciones locales. ¡Prepárate para una experiencia inolvidable en Bariloche!</p>
+        </section>
+        <section class="carusel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="./pages/acerca.html">
+                            <img src="./img/nosotros-carusel-bariloche.jpg" class="d-block w-100" alt="nosotros-carusel">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./pages/actividades.html">
+                            <img src="./img/actividades-carusel-bariloche.jpg" class="d-block w-100" alt="actividades-bariloche">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./pages/lugares.html">
+                            <img src="./img/lugares-carusel-bariloche.jpg" class="d-block w-100" alt="lugares-bariloche">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>  
+        <section class="separador">
+            <h3>Mira todo lo que podes hacer</h3>
+            <p>Veni y disfruta de <br> Bariloche.</p>
+        </section>      
+        <section class="cards-conteiner">
+            <div class="card">
+                <a href="./pages/actividades.html"><img src="./img/bicicleta-card1.jpg" alt="andando-en-bicicleta"></a>
+                <h3><br>Bike</h3>
+                <p>Paseos en bicicleta.</p>
+            </div>
+            <div class="card">
+                <a href="./pages/actividades.html"><img src="./img/cabalgata-card2.jpg" alt="cabalgata"></a>
+                <h3><br>Cabalgatas</h3>
+                <p>Paseos a caballo.</p>
+            </div>
+            <div class="card">
+                <a href="./pages/actividades.html"><img src="./img/caminata-card3.jpg" alt="caminatas"></a>
+                <h3><br>Caminatas</h3>
+                <p>Paseos por lugares asombrosos.</p>
+                
+            </div>
+            <div class="card">
+                <a href="./pages/actividades.html"><img src="./img/kayak-card4.jpg" alt="kayak"></a>
+                <h3><br>Kayak</h3>
+                <p>Aventura en Kayak</p>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <ul class="social-links">
             <li>
@@ -67,7 +106,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://es-la.facebook.com/"  class="social-link">
+                <a href="https://es-la.facebook.com/" class="social-link">
                     <img src="./img/facebook.png" alt="Facebook">
                 </a>
             </li>
@@ -78,8 +117,10 @@
             </li>
         </ul>
         <p>Informes y Atención al Turista</p>
-        <p>infobarilocheturismo@barilocheturismo.com</p>
+        <p>infoexplora@explorabariloche.com</p>
         <p>TEL 0800-442-9850</p>
     </footer>
 </body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
 </html>
