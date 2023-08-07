@@ -7,7 +7,6 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 20px;
-    /* Altura de la navbar en pantallas grandes */
 }
 
 .mensaje h2 {
@@ -48,7 +47,6 @@ header {
     right: 0;
     z-index: 9999;
     height: 20px;
-    /* Altura reducida de la navbar en pantallas grandes */
 }
 
 .navbar {
@@ -56,14 +54,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 3px 0;
-    /* Ajusta el padding superior e inferior */
 }
 
 .navbar-brand {
     color: #fff;
     font-size: 24px;
     font-weight: 500;
-    /* Medium 500 */
     font-style: italic;
     text-decoration: none;
 }
@@ -71,16 +67,12 @@ header {
 .nav-link {
     color: #fff;
     font-weight: 400;
-    /* Regular 400 */
     text-decoration: none;
     padding: 3px 15px;
-    /* Ajusta el padding superior e inferior */
 }
 
-/* Estilos para el botón toggler en responsive */
 .navbar-toggler {
     font-size: 14px;
-    /* Reduce el tamaño del icono */
     border: none;
     background: transparent;
     color: #fff;
@@ -92,7 +84,6 @@ header {
     position: relative;
     text-align: center;
     max-height: calc(100vh - 20px);
-    /* Restar la altura de la navbar al 100% de la altura de la ventana */
     overflow: hidden;
 }
 
@@ -110,16 +101,14 @@ header {
     font-size: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: 500;
-    /* Regular 400 */
 }
 
-/* Estilos para los mensajes */
+
 .mensaje {
     text-align: center;
     padding: 40px 0;
 }
 
-/* Estilos para el separador */
 .separador {
     text-align: center;
     background-color: #3e5f8a;
@@ -127,7 +116,6 @@ header {
     padding: 40px 0;
 }
 
-/* Estilos para las cards */
 .cards-conteiner {
     display: flex;
     flex-wrap: wrap;
@@ -178,7 +166,6 @@ header {
     text-align: center;
     padding: 20px;
     list-style: none;
-    /* Eliminar los puntos de la lista */
 }
 
 .social-links {
@@ -186,12 +173,10 @@ header {
     justify-content: center;
     margin-bottom: 10px;
     padding-left: 0;
-    /* Eliminar el padding izquierdo de la lista */
 }
 
 .social-links li {
     list-style: none;
-    /* Eliminar los puntos de la lista */
 }
 
 .social-link {
@@ -245,16 +230,13 @@ header {
 /* Estilos para el carrusel */
 .carousel-inner {
     max-height: 400px;
-    /* Ajustar la altura del carrusel */
 }
 
 .carousel-item img {
     object-fit: cover;
     max-height: 400px;
-    /* Ajustar la altura de las imágenes del carrusel */
 }
 
-/* Nuevos estilos para la sección cards-extensas */
 .cards-extensas {
     display: flex;
     flex-wrap: wrap;
@@ -284,7 +266,7 @@ header {
     color: #3e5f8a;
 }
 
-/* Estilos responsivos para la sección cards-extensas */
+
 @media (max-width: 768px) {
     .card-extensa {
         width: 100%;
@@ -296,24 +278,19 @@ header {
 
     header {
         height: 15px;
-        /* Altura reducida de la navbar en dispositivos móviles */
     }
 
-    /* Ajustar el padding-top del body para evitar solapamiento con la navbar */
     body {
         padding-top: 15px;
-        /* Altura de la navbar en dispositivos móviles */
+
     }
 
-    /* Reducir tamaño del botón toggler en responsive */
     .navbar-toggler {
         font-size: 12px;
     }
 
-    /* Ajustar el hero para que se visualice completo en dispositivos móviles */
     .hero {
         max-height: calc(100vh - 15px);
-        /* Restar la altura de la navbar al 100% de la altura de la ventana */
     }
 
     .hero h1 {
