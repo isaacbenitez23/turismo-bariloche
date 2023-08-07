@@ -1,11 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,500;1,900&display=swap');
+
 /* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    padding-top: 20px; /* Altura de la navbar en pantallas grandes */
+    padding-top: 20px;
+    /* Altura de la navbar en pantallas grandes */
 }
+
+.mensaje h2 {
+    font-weight: 500;
+}
+
+.mensaje p {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.separador h3 {
+    font-weight: 500;
+}
+
+.separador p {
+    font-weight: 400;
+}
+
+.text-content p {
+    font-weight: 500;
+    font-style: italic;
+}
+
 
 .container {
     max-width: 1200px;
@@ -21,31 +47,40 @@ header {
     left: 0;
     right: 0;
     z-index: 9999;
-    height: 20px; /* Altura reducida de la navbar en pantallas grandes */
+    height: 20px;
+    /* Altura reducida de la navbar en pantallas grandes */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 0; /* Ajusta el padding superior e inferior */
+    padding: 3px 0;
+    /* Ajusta el padding superior e inferior */
 }
 
 .navbar-brand {
     color: #fff;
     font-size: 24px;
+    font-weight: 500;
+    /* Medium 500 */
+    font-style: italic;
     text-decoration: none;
 }
 
 .nav-link {
     color: #fff;
+    font-weight: 400;
+    /* Regular 400 */
     text-decoration: none;
-    padding: 3px 15px; /* Ajusta el padding superior e inferior */
+    padding: 3px 15px;
+    /* Ajusta el padding superior e inferior */
 }
 
 /* Estilos para el botón toggler en responsive */
 .navbar-toggler {
-    font-size: 14px; /* Reduce el tamaño del icono */
+    font-size: 14px;
+    /* Reduce el tamaño del icono */
     border: none;
     background: transparent;
     color: #fff;
@@ -56,7 +91,8 @@ header {
 .hero {
     position: relative;
     text-align: center;
-    max-height: calc(100vh - 20px); /* Restar la altura de la navbar al 100% de la altura de la ventana */
+    max-height: calc(100vh - 20px);
+    /* Restar la altura de la navbar al 100% de la altura de la ventana */
     overflow: hidden;
 }
 
@@ -73,6 +109,8 @@ header {
     color: #fff;
     font-size: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    /* Regular 400 */
 }
 
 /* Estilos para los mensajes */
@@ -122,6 +160,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin: 20px;
+    margin-bottom: 40px;
 }
 
 .gallery img {
@@ -255,12 +295,14 @@ header {
     }
 
     header {
-        height: 15px; /* Altura reducida de la navbar en dispositivos móviles */
+        height: 15px;
+        /* Altura reducida de la navbar en dispositivos móviles */
     }
 
     /* Ajustar el padding-top del body para evitar solapamiento con la navbar */
     body {
-        padding-top: 15px; /* Altura de la navbar en dispositivos móviles */
+        padding-top: 15px;
+        /* Altura de la navbar en dispositivos móviles */
     }
 
     /* Reducir tamaño del botón toggler en responsive */
@@ -270,7 +312,8 @@ header {
 
     /* Ajustar el hero para que se visualice completo en dispositivos móviles */
     .hero {
-        max-height: calc(100vh - 15px); /* Restar la altura de la navbar al 100% de la altura de la ventana */
+        max-height: calc(100vh - 15px);
+        /* Restar la altura de la navbar al 100% de la altura de la ventana */
     }
 
     .hero h1 {
