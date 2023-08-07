@@ -107,6 +107,7 @@ header {
 .mensaje {
     text-align: center;
     padding: 40px 0;
+    margin: 20px;
 }
 
 .separador {
