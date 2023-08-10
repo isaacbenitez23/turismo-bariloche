@@ -1,0 +1,36 @@
+// _generales.scss
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+
+.mensaje {
+    h2 {
+        font-weight: 500;
+    }
+
+    p {
+        font-weight: 400;
+        font-style: italic;
+    }
+}
+
+.separador {
+    h3 {
+        font-weight: 500;
+    }
+
+    p {
+        font-weight: 400;
+    }
+}
+
+.text-content {
+    p {
+        font-weight: 500;
+        font-style: italic;
+    }
+}

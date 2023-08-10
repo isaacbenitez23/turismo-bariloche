@@ -1,0 +1,40 @@
+// _header.scss
+header {
+    background-color: $primary-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 20px;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px 0;
+    }
+
+    .navbar-brand {
+        color: $secondary-color;
+        font-size: 24px;
+        font-weight: 500;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    .nav-link {
+        color: $secondary-color;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 3px 15px;
+    }
+
+    .navbar-toggler {
+        font-size: 14px;
+        border: none;
+        background: transparent;
+        color: $secondary-color;
+        cursor: pointer;
+    }
+}

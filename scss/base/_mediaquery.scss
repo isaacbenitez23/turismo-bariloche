@@ -1,0 +1,26 @@
+// _mediaquery.scss
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    header {
+        height: 15px;
+    }
+
+    body {
+        padding-top: 15px;
+    }
+
+    .navbar-toggler {
+        font-size: 12px;
+    }
+
+    .hero {
+        max-height: calc(100vh - 15px);
+        h1 {
+            font-size: 28px;
+        }
+    }
+}

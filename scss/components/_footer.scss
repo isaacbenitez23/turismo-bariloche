@@ -1,0 +1,26 @@
+// _footer.scss
+.footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: 20px;
+    list-style: none;
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+
+    .social-link {
+        display: inline-block;
+        margin: 0 5px;
+
+        img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    }
+}
