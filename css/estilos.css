@@ -10,20 +10,25 @@ body {
   padding: 30px; }
   .mensaje h2 {
     text-align: center;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #3e5f8a; }
   .mensaje p {
     text-align: center;
-    font-weight: 400;
-    font-style: italic; }
+    font-weight: 500;
+    font-style: italic;
+    color: #555; }
 
 .separador {
-  padding: 30px; }
+  padding: 30px;
+  background-color: #3e5f8a; }
   .separador h3 {
     text-align: center;
-    font-weight: 500; }
+    font-weight: 500;
+    color: white; }
   .separador p {
     text-align: center;
-    font-weight: 400; }
+    font-weight: 400;
+    color: white; }
 
 .text-content p {
   font-weight: 500;
@@ -106,7 +111,9 @@ header {
 
 .cards-extensas {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px; }
   .cards-extensas .card-extensa {
     width: 50%;
     padding: 15px; }
@@ -114,7 +121,18 @@ header {
       max-width: 100%;
       height: auto;
       display: block;
-      border-radius: 8px; }
+      border-radius: 8px;
+      padding: 10px; }
+    .cards-extensas .card-extensa .text-content {
+      margin-top: 10px; }
+      .cards-extensas .card-extensa .text-content h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: #3e5f8a; }
+      .cards-extensas .card-extensa .text-content p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555; }
 
 .carousel-inner {
   max-height: 400px; }
@@ -128,11 +146,17 @@ header {
   gap: 10px;
   margin: 20px;
   margin-bottom: 40px; }
-  .gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px; }
+  .gallery .image {
+    position: relative;
+    overflow: hidden; }
+    .gallery .image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out; }
+    .gallery .image:hover img {
+      transform: scale(1.1); }
 
 .formulario {
   text-align: center;
@@ -195,4 +219,10 @@ header {
   .hero {
     max-height: calc(100vh - 15px); }
     .hero h1 {
-      font-size: 28px; } }
+      font-size: 28px; }
+  .cards-extensas .card-extensa {
+    width: 100%; }
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+    .gallery .image img {
+      height: 150px; } }

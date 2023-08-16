@@ -58,6 +58,8 @@
 .cards-extensas {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
 
     .card-extensa {
         width: 50%;
@@ -68,6 +70,23 @@
             height: auto;
             display: block;
             border-radius: 8px;
+            padding: 10px;
+        }
+
+        .text-content {
+            margin-top: 10px;
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 5px;
+                color: $primary-color;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+                color: #555;
+            }
         }
     }
 }
@@ -88,11 +107,21 @@
     margin: 20px;
     margin-bottom: 40px;
 
-    img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
+    .image {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
     }
 }
 
