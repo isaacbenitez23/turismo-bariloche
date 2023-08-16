@@ -1,7 +1,6 @@
-// _footer.scss
 .footer {
-    background-color: $primary-color;
-    color: $secondary-color;
+    background-color: #3e5f8a;
+    color: #fff;
     text-align: center;
     padding: 20px;
     list-style: none;
@@ -11,16 +10,20 @@
         justify-content: center;
         margin-bottom: 10px;
         padding-left: 0;
-    }
 
-    .social-link {
-        display: inline-block;
-        margin: 0 5px;
+        li {
+            list-style: none;
+        }
 
-        img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
+        .social-link {
+            display: inline-block;
+            margin: 0 5px;
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
         }
     }
 }
